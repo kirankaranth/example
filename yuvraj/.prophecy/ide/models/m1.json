@@ -83,48 +83,14 @@
         "autoUpdateOnRun" : false
       }
     },
-    "5uveXGMLMp3RuN5CSYB4S$$iY--6KYZC_S6wWzV7uLxm" : {
-      "id" : "5uveXGMLMp3RuN5CSYB4S$$iY--6KYZC_S6wWzV7uLxm",
-      "component" : "Aggregate",
-      "metadata" : {
-        "label" : "Aggregate_1",
-        "slug" : "Aggregate_1",
-        "x" : -860,
-        "y" : -200,
-        "phase" : 0,
-        "macroDependencies" : [ ]
-      },
-      "properties" : {
-        "aggregate" : [ ],
-        "allowSelection" : true,
-        "condition" : {
-          "expression" : ""
-        },
-        "activeTab" : "aggregate",
-        "columnsSelector" : [ ],
-        "groupBy" : [ ]
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "MWtC2bDwB-sxLwcRmq0yN$$71_fjin3gsep9zEZwSutR",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "qkVvhNiP5VfZpIWHHAXb8$$7A_YRXuQpoxlSdhrhBcc8",
-          "slug" : "out"
-        } ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      }
-    },
     "PhhWGFlbuQd7dbzXj541t$$dgdbumRxz6O_WsbN4J4cj" : {
       "id" : "PhhWGFlbuQd7dbzXj541t$$dgdbumRxz6O_WsbN4J4cj",
       "component" : "Aggregate",
       "metadata" : {
         "label" : "Aggregate_2",
         "slug" : "Aggregate_2",
-        "x" : -840,
-        "y" : 120,
+        "x" : -720,
+        "y" : -20,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -158,12 +124,6 @@
     "sourcePort" : "mRjrtGHo5zncKX_ygLht8$$Ve-MGDnxetg_25YcwA9qx",
     "target" : "m1##LH0Tj4DZ",
     "targetPort" : "TZ5o656S"
-  }, {
-    "id" : "nsx-CA6e0uct0choYGE0W",
-    "source" : "5uveXGMLMp3RuN5CSYB4S$$iY--6KYZC_S6wWzV7uLxm",
-    "sourcePort" : "qkVvhNiP5VfZpIWHHAXb8$$7A_YRXuQpoxlSdhrhBcc8",
-    "target" : "g7jfH80ANgAUDQuBEc_YO$$tEUQ8AbNiMkcGI5JWkLYB",
-    "targetPort" : "FrfKGgdQTHojLEqpZqVUQ$$wbW0s43EmeQaMH2Xqpn_L"
   }, {
     "id" : "ZRv1mcZ56Oh8TzJGGrOEv$$VGsl_ykUfdJpceNHmFaQB",
     "source" : "PhhWGFlbuQd7dbzXj541t$$dgdbumRxz6O_WsbN4J4cj",
