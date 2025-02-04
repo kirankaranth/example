@@ -89,8 +89,8 @@
       "metadata" : {
         "label" : "Aggregate_1",
         "slug" : "Aggregate_1",
-        "x" : -560,
-        "y" : -220,
+        "x" : -860,
+        "y" : -200,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -123,8 +123,8 @@
       "metadata" : {
         "label" : "Aggregate_2",
         "slug" : "Aggregate_2",
-        "x" : -560,
-        "y" : 60,
+        "x" : -840,
+        "y" : 120,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
