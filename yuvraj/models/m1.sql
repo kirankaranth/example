@@ -1,0 +1,1 @@
+select uid from_csv(csvStr, schema )
