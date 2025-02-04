@@ -1,1 +1,1 @@
-select uid from_csv(csvStr, schema )
+select uid2 from_csv(csvStr, schema )

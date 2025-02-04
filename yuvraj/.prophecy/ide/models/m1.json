@@ -15,8 +15,8 @@
     "version" : 3
   },
   "processes" : {
-    "final##MaXeJSIk" : {
-      "id" : "final##MaXeJSIk",
+    "final##SENqcVOk" : {
+      "id" : "final##SENqcVOk",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
@@ -27,7 +27,7 @@
         "customQueryDisabled" : true,
         "customQuery" : true,
         "incrementalEditorDisabled" : true,
-        "query" : "select uid from_csv(csvStr, schema )\n",
+        "query" : "select uid2 from_csv(csvStr, schema )\n",
         "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
@@ -37,7 +37,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "ly4LXwtF",
+          "id" : "NlSxnHZM",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
