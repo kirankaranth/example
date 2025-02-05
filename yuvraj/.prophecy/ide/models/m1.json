@@ -8,6 +8,10 @@
       "sources" : [ ]
     },
     "graphConfig" : {
+      "entityConfig" : {
+        "materialized" : "table",
+        "type" : "ModelConfig"
+      },
       "userDefinedConfig" : {
         "vars" : { }
       }
@@ -20,10 +24,12 @@
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
-        "x" : 140,
-        "y" : -160,
+        "x" : 20,
+        "y" : -260,
         "phase" : 0,
         "macroDependencies" : [ ],
+        "comment" : "Extracts user IDs from a CSV string.",
+        "autoUpdateComment" : true,
         "isLabelGrayed" : false
       },
       "properties" : {
@@ -52,8 +58,8 @@
       "metadata" : {
         "label" : "Aggregate_1",
         "slug" : "Aggregate_1",
-        "x" : -140,
-        "y" : -240,
+        "x" : -260,
+        "y" : -280,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
