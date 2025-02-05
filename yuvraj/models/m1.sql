@@ -1,1 +1,1 @@
-select user from usergroup
+
