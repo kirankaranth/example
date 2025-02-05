@@ -52,8 +52,8 @@
       "metadata" : {
         "label" : "Aggregate_1",
         "slug" : "Aggregate_1",
-        "x" : 40,
-        "y" : -320,
+        "x" : -140,
+        "y" : -240,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -86,8 +86,8 @@
       "metadata" : {
         "label" : "Join_1",
         "slug" : "Join_1",
-        "x" : -320,
-        "y" : -180,
+        "x" : -500,
+        "y" : -300,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
