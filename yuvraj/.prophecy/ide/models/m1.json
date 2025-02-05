@@ -20,8 +20,8 @@
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
-        "x" : 240,
-        "y" : -140,
+        "x" : 140,
+        "y" : -160,
         "phase" : 0,
         "macroDependencies" : [ ],
         "isLabelGrayed" : false
@@ -52,8 +52,8 @@
       "metadata" : {
         "label" : "Aggregate_1",
         "slug" : "Aggregate_1",
-        "x" : -180,
-        "y" : -200,
+        "x" : -80,
+        "y" : -140,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -79,8 +79,54 @@
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       }
+    },
+    "M6PbSjtQfFYZ5NY7uTtLb$$jfMThKdvQRqr3eSv5QZRw" : {
+      "id" : "M6PbSjtQfFYZ5NY7uTtLb$$jfMThKdvQRqr3eSv5QZRw",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "Join_1",
+        "slug" : "Join_1",
+        "x" : -280,
+        "y" : -140,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "expression" : ""
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ ],
+        "activeTab" : "conditions",
+        "columnsSelector" : [ ],
+        "headAlias" : "in0"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "y3go50Xn_AEtnDKKoRCI7$$EOAdgrHEx5UNBWTr6e52E",
+          "slug" : "in0"
+        }, {
+          "id" : "OEhnzII5UyP2J-grNR4Rs$$KaHroIdfJ91qvh2NnkfJp",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "Awx2zK7MMAkw7XRVoWyKk$$5OXDG9_L-eKgHYAjmjS-D",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
     }
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "iEHV3-3Gv80WkMHAiWIKU$$0cfaefW8xpGc9G60Tkv7K",
+    "source" : "M6PbSjtQfFYZ5NY7uTtLb$$jfMThKdvQRqr3eSv5QZRw",
+    "sourcePort" : "Awx2zK7MMAkw7XRVoWyKk$$5OXDG9_L-eKgHYAjmjS-D",
+    "target" : "WFi0v5GGvqkvbew_topQo$$QPIP3MdoLK9JgZAuY_KyO",
+    "targetPort" : "Res8MJSyBibKUKWu9OUxu$$bbL8n4jUHVxUKYBMw94y5"
+  } ],
   "component" : "Model"
 }
