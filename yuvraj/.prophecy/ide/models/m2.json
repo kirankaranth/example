@@ -50,7 +50,7 @@
         "label" : "Aggregate_1",
         "slug" : "Aggregate_1",
         "x" : -360,
-        "y" : -200,
+        "y" : -180,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
