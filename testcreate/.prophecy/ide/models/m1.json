@@ -1,0 +1,95 @@
+{
+  "id" : "m1",
+  "metainfo" : {
+    "label" : "m1",
+    "autoLayout" : false,
+    "staleState" : "file",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "m1##HR8uKr9x" : {
+      "id" : "m1##HR8uKr9x",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "m1",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM Join_1\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "tQ49I3lJ",
+          "slug" : "Join_1"
+        } ],
+        "outputs" : [ {
+          "id" : "r3r4wucg",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "A26khyhdrZFa6yB2PDk1m$$Tg4om8DDdYuGU1KDEivFR" : {
+      "id" : "A26khyhdrZFa6yB2PDk1m$$Tg4om8DDdYuGU1KDEivFR",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "Join_1",
+        "slug" : "Join_1",
+        "x" : -200,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "expression" : ""
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ ],
+        "activeTab" : "conditions",
+        "columnsSelector" : [ ],
+        "headAlias" : "in0"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "z1uICJ2Umq9R61UT95y83$$IQJcpM7vc1wDZ5yclc8dI",
+          "slug" : "in0"
+        }, {
+          "id" : "suw6EAWmGuKhvSPBFn-yC$$jQORdLerdIt3mwFidbZ74",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "RRAwh85j8dChrOLcoIKvp$$_R_oNneXkDGg-VQ9spZey",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "P1Pm_N1CYA8z8qx6gmC7E$$fo5LteMw9hfRiCc0Nm7jD",
+    "source" : "A26khyhdrZFa6yB2PDk1m$$Tg4om8DDdYuGU1KDEivFR",
+    "sourcePort" : "RRAwh85j8dChrOLcoIKvp$$_R_oNneXkDGg-VQ9spZey",
+    "target" : "m1##HR8uKr9x",
+    "targetPort" : "tQ49I3lJ"
+  } ],
+  "component" : "Model"
+}
