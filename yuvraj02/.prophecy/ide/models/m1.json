@@ -7,39 +7,42 @@
     "sourceSuggestions" : {
       "sources" : [ ]
     },
+    "graphConfig" : {
+      "userDefinedConfig" : {
+        "vars" : { }
+      }
+    },
     "version" : 3
   },
   "processes" : {
-    "m1##wVudRkrK" : {
-      "id" : "m1##wVudRkrK",
+    "final##vFMLSuDy" : {
+      "id" : "final##vFMLSuDy",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
-        "phase" : 0
+        "phase" : 0,
+        "isLabelGrayed" : false
       },
       "properties" : {
         "customQueryDisabled" : true,
-        "customQuery" : false,
+        "customQuery" : true,
         "incrementalEditorDisabled" : true,
-        "query" : "",
-        "isModel" : true,
+        "query" : "SELECT user\n\nFROM github\n",
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
         }
       },
       "ports" : {
-        "inputs" : [ {
-          "id" : "lXALYZSM",
-          "slug" : "in0"
-        } ],
+        "inputs" : [ ],
         "outputs" : [ {
-          "id" : "ve2oUxTq",
+          "id" : "VBWWtTYn",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
-      }
+      },
+      "index" : 0
     }
   },
   "connections" : [ ],
