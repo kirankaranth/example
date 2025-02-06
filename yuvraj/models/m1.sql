@@ -1,1 +1,1 @@
-select main from prophecy
+select main from prophecy
