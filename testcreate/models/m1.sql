@@ -1,0 +1,1 @@
+select noConflict from github
