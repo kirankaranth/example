@@ -28,7 +28,6 @@
         "customQuery" : true,
         "incrementalEditorDisabled" : true,
         "query" : "SELECT user\n\nFROM prophecy\n",
-        "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
