@@ -20,8 +20,8 @@
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
-        "x" : 140,
-        "y" : -160,
+        "x" : 100,
+        "y" : -220,
         "phase" : 0,
         "macroDependencies" : [ ],
         "isLabelGrayed" : false
@@ -86,8 +86,8 @@
       "metadata" : {
         "label" : "Join_1",
         "slug" : "Join_1",
-        "x" : -500,
-        "y" : -300,
+        "x" : -440,
+        "y" : -220,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
