@@ -1,1 +1,1 @@
-select main from maingroup
+select main from prophecy
