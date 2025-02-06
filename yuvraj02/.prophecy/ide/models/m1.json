@@ -15,8 +15,8 @@
     "version" : 3
   },
   "processes" : {
-    "final##vFMLSuDy" : {
-      "id" : "final##vFMLSuDy",
+    "final##LnnyqDHI" : {
+      "id" : "final##LnnyqDHI",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
@@ -27,7 +27,8 @@
         "customQueryDisabled" : true,
         "customQuery" : true,
         "incrementalEditorDisabled" : true,
-        "query" : "SELECT user\n\nFROM github\n",
+        "query" : "SELECT user\n\nFROM prophecy\n",
+        "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -36,7 +37,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "VBWWtTYn",
+          "id" : "XG7gBPc1",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
