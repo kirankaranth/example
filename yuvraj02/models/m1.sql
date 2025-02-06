@@ -1,1 +1,1 @@
-select user from externalSource2
+select user from externalSource3
