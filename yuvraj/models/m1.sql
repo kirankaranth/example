@@ -1,1 +1,1 @@
-select main from gh
+select main from maingroup
