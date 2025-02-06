@@ -1,1 +1,1 @@
-select user from externalSource4
+select user from prophecy
