@@ -1,4 +1,4 @@
-name: ahjwbsj
+name: SimpleExternal02
 description: ''
 version: '4'
 author: kiranadmin@prophecy.io
@@ -16,7 +16,7 @@ gemContainer:
   dependencies: null
 functions:
   author: null
-  createdAt: '2025-02-04 10:58:17'
+  createdAt: '2025-02-05 13:40:49'
   udfs: {}
   udafs: {}
   expressions: {}
@@ -38,22 +38,7 @@ sqlModels:
       seeds: []
       sources: []
       snapshots: []
-    createdAt: '2025-02-04 11:08:42'
-  .prophecy/metadata/sqlmodels/m2:
-    name: m2
-    schema: null
-    description: null
-    author: kiranadmin@prophecy.io
-    files:
-    - models/m2.sql
-    - .prophecy/ide/models/m2.json
-    sqlDependencies:
-      models: []
-      datasets: []
-      seeds: []
-      sources: []
-      snapshots: []
-    createdAt: '2025-02-05 11:31:27'
+    createdAt: '2025-02-06 07:55:28'
 sqlSnapshots: {}
 sqlTests: {}
 sqlMacros:
@@ -65,7 +50,7 @@ sqlMacros:
     files:
     - macros/generate_schema_name.sql
     - .prophecy/ide/macros/generate_schema_name.json
-    createdAt: '2025-02-04 11:01:28'
+    createdAt: '2025-02-05 13:41:25'
 sqlSeeds: {}
 sqlSources: {}
 sqlUnreferencedSources: {}
@@ -73,7 +58,7 @@ sqlPipeline:
   name: sqlPipeline
   description: null
   author: kiranadmin@prophecy.io
-  createdAt: '2025-02-04 10:58:17'
+  createdAt: '2025-02-05 13:40:49'
 dependencies: []
 projectDependencies: {}
 flags:
