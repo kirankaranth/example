@@ -1,1 +1,1 @@
-select main from users
+select main from gh
