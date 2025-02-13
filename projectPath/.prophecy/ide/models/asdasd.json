@@ -2,45 +2,48 @@
   "id" : "asdasd",
   "metainfo" : {
     "label" : "asdasd",
-    "autoLayout" : false,
-    "staleState" : "file",
+    "autoLayout" : true,
+    "staleState" : "none",
     "sourceSuggestions" : {
       "sources" : [ ]
+    },
+    "graphConfig" : {
+      "userDefinedConfig" : {
+        "vars" : { }
+      }
     },
     "version" : 3
   },
   "processes" : {
-    "asdasd##fmKnXerU" : {
-      "id" : "asdasd##fmKnXerU",
+    "final##UvHuXB5N" : {
+      "id" : "final##UvHuXB5N",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "asdasd",
-        "x" : 20,
-        "y" : 20,
-        "phase" : 0
+        "phase" : 0,
+        "isLabelGrayed" : false
       },
       "properties" : {
         "customQueryDisabled" : true,
-        "customQuery" : false,
+        "customQuery" : true,
         "incrementalEditorDisabled" : true,
-        "query" : "",
+        "query" : "left\n",
+        "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
         }
       },
       "ports" : {
-        "inputs" : [ {
-          "id" : "ArcsOhag",
-          "slug" : "in0"
-        } ],
+        "inputs" : [ ],
         "outputs" : [ {
-          "id" : "WVCSXp7m",
+          "id" : "WwJUpEiA",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
-      }
+      },
+      "index" : 0
     }
   },
   "connections" : [ ],
