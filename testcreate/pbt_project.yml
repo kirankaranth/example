@@ -1,6 +1,6 @@
-name: ExampleExt
+name: testcreate
 description: ''
-version: '1'
+version: 1.0.0
 author: kiranadmin@prophecy.io
 language: sql
 buildSystem: ''
@@ -16,43 +16,17 @@ gemContainer:
   dependencies: null
 functions:
   author: null
-  createdAt: '2025-01-15 04:07:26'
+  createdAt: '2025-02-06 10:06:42'
   udfs: {}
   udafs: {}
   expressions: {}
   airflowFunctions: {}
   businessRules: {}
 subgraphs: {}
-sqlModels:
-  .prophecy/metadata/sqlmodels/asdasd:
-    name: asdasd
-    schema: null
-    description: null
-    author: kiranadmin@prophecy.io
-    files:
-    - models/asdasd.sql
-    - .prophecy/ide/models/asdasd.json
-    sqlDependencies:
-      models: []
-      datasets: []
-      seeds: []
-      sources: []
-      snapshots: []
-    createdAt: '2025-02-05 10:37:12'
+sqlModels: {}
 sqlSnapshots: {}
 sqlTests: {}
 sqlMacros:
-  .prophecy/metadata/sqlmacros/gem1:
-    name: gem1
-    macroType: query
-    description: null
-    author: kiranadmin@prophecy.io
-    files:
-    - macros/gem1.sql
-    - .prophecy/ide/macros/gem1.json
-    - macros/macros.yml
-    - gems/gem1.py
-    createdAt: '2025-02-07 07:43:45'
   .prophecy/metadata/sqlmacros/generate_schema_name:
     name: generate_schema_name
     macroType: expression
@@ -61,7 +35,7 @@ sqlMacros:
     files:
     - macros/generate_schema_name.sql
     - .prophecy/ide/macros/generate_schema_name.json
-    createdAt: '2025-01-15 04:07:28'
+    createdAt: '2025-02-06 10:06:49'
 sqlSeeds: {}
 sqlSources: {}
 sqlUnreferencedSources: {}
@@ -69,7 +43,7 @@ sqlPipeline:
   name: sqlPipeline
   description: null
   author: kiranadmin@prophecy.io
-  createdAt: '2025-01-15 04:07:26'
+  createdAt: '2025-02-06 10:06:42'
 dependencies: []
 projectDependencies: {}
 flags:

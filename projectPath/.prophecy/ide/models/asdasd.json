@@ -1,0 +1,48 @@
+{
+  "id" : "asdasd",
+  "metainfo" : {
+    "label" : "asdasd",
+    "autoLayout" : false,
+    "staleState" : "file",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "asdasd##fmKnXerU" : {
+      "id" : "asdasd##fmKnXerU",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "asdasd",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ArcsOhag",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "WVCSXp7m",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Model"
+}
