@@ -15,8 +15,8 @@
     "version" : 3
   },
   "processes" : {
-    "final##CSY0Pn1B" : {
-      "id" : "final##CSY0Pn1B",
+    "final##yj92HQeW" : {
+      "id" : "final##yj92HQeW",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
@@ -29,7 +29,7 @@
         "customQueryDisabled" : true,
         "customQuery" : true,
         "incrementalEditorDisabled" : true,
-        "query" : "remote\ngithub1\n",
+        "query" : "remote\ngithub1212312\n",
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -38,44 +38,13 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "e6SWR2gZ",
+          "id" : "RRViv2ia",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       },
       "index" : 0
-    },
-    "3f1EDnMKiohZTNvt8mV_E$$YLVLceNrM-W7Sm1s3iM40" : {
-      "id" : "3f1EDnMKiohZTNvt8mV_E$$YLVLceNrM-W7Sm1s3iM40",
-      "component" : "Deduplicate",
-      "metadata" : {
-        "label" : "Deduplicate_1",
-        "slug" : "Deduplicate_1",
-        "x" : -220,
-        "y" : 60,
-        "phase" : 0,
-        "macroDependencies" : [ ]
-      },
-      "properties" : {
-        "dedupColumns" : [ ],
-        "dedupType" : "distinct",
-        "columnsSelector" : [ ],
-        "orders" : [ ],
-        "useOrderBy" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "Emexwb65AGMbeREC0nTwr$$Q0FX35vxNMwsrN29Hz8JT",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "XG_54llWPMnC1CuXFWdvk$$arFOQ27YV_2RKAOiB20Gh",
-          "slug" : "out"
-        } ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      }
     }
   },
   "connections" : [ ],
