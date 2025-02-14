@@ -15,8 +15,8 @@
     "version" : 3
   },
   "processes" : {
-    "final##R9QnORWe" : {
-      "id" : "final##R9QnORWe",
+    "final##zJqaF3yR" : {
+      "id" : "final##zJqaF3yR",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
@@ -27,7 +27,7 @@
         "customQueryDisabled" : true,
         "customQuery" : true,
         "incrementalEditorDisabled" : true,
-        "query" : "remote\n",
+        "query" : "remote\r\nprophecy\n",
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -36,7 +36,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "M67wHOnm",
+          "id" : "fcQPWiy3",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
