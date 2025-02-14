@@ -1,2 +1,2 @@
 remote
-githubtestreloadclean commit
+githubtestreloadclean commit tested with reload from modal
