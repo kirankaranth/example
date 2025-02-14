@@ -20,13 +20,14 @@
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
-        "x" : 20,
-        "y" : 20,
+        "x" : -80,
+        "y" : 0,
         "phase" : 0,
+        "macroDependencies" : [ ],
         "isLabelGrayed" : false
       },
       "properties" : {
-        "customQueryDisabled" : true,
+        "customQueryDisabled" : false,
         "customQuery" : true,
         "incrementalEditorDisabled" : true,
         "query" : "remote\r\nprophecy\n",
@@ -43,8 +44,7 @@
         } ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
-      },
-      "index" : 0
+      }
     }
   },
   "connections" : [ ],
