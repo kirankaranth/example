@@ -1,1 +1,1 @@
-select users from prophecy123
+select users from github
