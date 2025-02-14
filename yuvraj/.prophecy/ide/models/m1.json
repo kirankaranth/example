@@ -15,8 +15,8 @@
     "version" : 3
   },
   "processes" : {
-    "final##DeimE89D" : {
-      "id" : "final##DeimE89D",
+    "final##cWb3RZ6m" : {
+      "id" : "final##cWb3RZ6m",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
@@ -29,7 +29,7 @@
         "customQueryDisabled" : true,
         "customQuery" : true,
         "incrementalEditorDisabled" : true,
-        "query" : "remote\ngithub123\n",
+        "query" : "remote\ngithubnormal\n",
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -38,7 +38,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "Rm7KR8Dv",
+          "id" : "A25Z1ZUA",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
