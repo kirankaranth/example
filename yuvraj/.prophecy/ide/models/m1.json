@@ -15,8 +15,8 @@
     "version" : 3
   },
   "processes" : {
-    "final##LiIP6s8e" : {
-      "id" : "final##LiIP6s8e",
+    "final##FWHjsFOb" : {
+      "id" : "final##FWHjsFOb",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
@@ -29,7 +29,7 @@
         "customQueryDisabled" : true,
         "customQuery" : true,
         "incrementalEditorDisabled" : true,
-        "query" : "SELECT users\n\nFROM prophecy\n",
+        "query" : "SELECT users\n\nFROM prophecy123\n",
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -38,7 +38,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "OxGKBDQq",
+          "id" : "mCikecWv",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
