@@ -1,1 +1,1 @@
-select user from externalSourceMain
+select user from external
