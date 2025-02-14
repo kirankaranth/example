@@ -87,7 +87,7 @@
         "label" : "Join_1",
         "slug" : "Join_1",
         "x" : -380,
-        "y" : 0,
+        "y" : -140,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -126,8 +126,8 @@
       "metadata" : {
         "label" : "Join_2",
         "slug" : "Join_2",
-        "x" : -720,
-        "y" : -40,
+        "x" : -500,
+        "y" : 240,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
