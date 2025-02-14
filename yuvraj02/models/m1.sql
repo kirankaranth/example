@@ -1,1 +1,1 @@
-select user from external
+select user from externalgithub
