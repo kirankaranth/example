@@ -15,8 +15,8 @@
     "version" : 3
   },
   "processes" : {
-    "final##KmwyYs3y" : {
-      "id" : "final##KmwyYs3y",
+    "final##o745Juwr" : {
+      "id" : "final##o745Juwr",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
@@ -29,7 +29,7 @@
         "customQueryDisabled" : true,
         "customQuery" : true,
         "incrementalEditorDisabled" : true,
-        "query" : "SELECT users\n\nFROM github4321\n",
+        "query" : "SELECT users\n\nFROM prophecy\n",
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -38,7 +38,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "Vt75rmg1",
+          "id" : "qgHzvME5",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
