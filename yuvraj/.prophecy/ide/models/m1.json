@@ -15,8 +15,8 @@
     "version" : 3
   },
   "processes" : {
-    "final##FWHjsFOb" : {
-      "id" : "final##FWHjsFOb",
+    "final##ZdWGpMS8" : {
+      "id" : "final##ZdWGpMS8",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
@@ -29,7 +29,7 @@
         "customQueryDisabled" : true,
         "customQuery" : true,
         "incrementalEditorDisabled" : true,
-        "query" : "SELECT users\n\nFROM prophecy123\n",
+        "query" : "SELECT users\n\nFROM prophecy\n",
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -38,7 +38,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "mCikecWv",
+          "id" : "D6qMAELK",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
