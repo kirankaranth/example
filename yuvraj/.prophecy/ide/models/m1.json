@@ -15,8 +15,8 @@
     "version" : 3
   },
   "processes" : {
-    "final##dXhzgxt8" : {
-      "id" : "final##dXhzgxt8",
+    "final##MVMS6KyH" : {
+      "id" : "final##MVMS6KyH",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
@@ -29,7 +29,7 @@
         "customQueryDisabled" : true,
         "customQuery" : true,
         "incrementalEditorDisabled" : true,
-        "query" : "SELECT users\n\nFROM github1234\n",
+        "query" : "SELECT users\n\nFROM prophecy\n",
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -38,7 +38,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "pkiV8b4Z",
+          "id" : "gbpAGEEb",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
