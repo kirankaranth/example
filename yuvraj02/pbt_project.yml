@@ -24,6 +24,66 @@ functions:
   businessRules: {}
 subgraphs: {}
 sqlModels:
+  .prophecy/metadata/sqlmodels/m3:
+    name: m3
+    schema: null
+    description: null
+    author: kiranadmin@prophecy.io
+    files:
+    - models/m3.sql
+    - .prophecy/ide/models/m3.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-02-14 19:26:58'
+  .prophecy/metadata/sqlmodels/m5:
+    name: m5
+    schema: null
+    description: null
+    author: kiranadmin@prophecy.io
+    files:
+    - models/m5.sql
+    - .prophecy/ide/models/m5.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-02-14 19:30:03'
+  .prophecy/metadata/sqlmodels/m4:
+    name: m4
+    schema: null
+    description: null
+    author: kiranadmin@prophecy.io
+    files:
+    - models/m4.sql
+    - .prophecy/ide/models/m4.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-02-14 19:29:50'
+  .prophecy/metadata/sqlmodels/m2:
+    name: m2
+    schema: null
+    description: null
+    author: kiranadmin@prophecy.io
+    files:
+    - models/m2.sql
+    - .prophecy/ide/models/m2.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-02-14 19:26:49'
   .prophecy/metadata/sqlmodels/m1:
     name: m1
     schema: null
