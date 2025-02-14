@@ -1,1 +1,1 @@
-select users from model11222
+select users from github
