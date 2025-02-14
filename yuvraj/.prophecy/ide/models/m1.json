@@ -15,8 +15,8 @@
     "version" : 3
   },
   "processes" : {
-    "final##pL4vDcOl" : {
-      "id" : "final##pL4vDcOl",
+    "final##EKqztdRp" : {
+      "id" : "final##EKqztdRp",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
@@ -29,7 +29,7 @@
         "customQueryDisabled" : true,
         "customQuery" : true,
         "incrementalEditorDisabled" : true,
-        "query" : "SELECT users\n\nFROM prophecy\n",
+        "query" : "SELECT users\n\nFROM prophect123\n",
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -38,7 +38,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "epp33iPk",
+          "id" : "YQEhgVJA",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
