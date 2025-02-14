@@ -1,1 +1,1 @@
-select user from github1233
+select user from github
