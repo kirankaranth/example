@@ -15,8 +15,8 @@
     "version" : 3
   },
   "processes" : {
-    "final##kdbVqS6c" : {
-      "id" : "final##kdbVqS6c",
+    "final##dXhzgxt8" : {
+      "id" : "final##dXhzgxt8",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
@@ -29,7 +29,7 @@
         "customQueryDisabled" : true,
         "customQuery" : true,
         "incrementalEditorDisabled" : true,
-        "query" : "SELECT users\n\nFROM github\n",
+        "query" : "SELECT users\n\nFROM github1234\n",
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -38,7 +38,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "qclmem4m",
+          "id" : "pkiV8b4Z",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
