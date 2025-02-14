@@ -20,13 +20,14 @@
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
-        "x" : 20,
+        "x" : 80,
         "y" : 20,
         "phase" : 0,
+        "macroDependencies" : [ ],
         "isLabelGrayed" : false
       },
       "properties" : {
-        "customQueryDisabled" : true,
+        "customQueryDisabled" : false,
         "customQuery" : true,
         "incrementalEditorDisabled" : true,
         "query" : "remote\ngithub123\n",
@@ -43,8 +44,47 @@
         } ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
+      }
+    },
+    "6cJIccdUBKY-nFUDQhHi2$$44HcgbwhB7gzRNdfxP0xu" : {
+      "id" : "6cJIccdUBKY-nFUDQhHi2$$44HcgbwhB7gzRNdfxP0xu",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "Join_1",
+        "slug" : "Join_1",
+        "x" : -100,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
       },
-      "index" : 0
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "expression" : ""
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ ],
+        "activeTab" : "conditions",
+        "columnsSelector" : [ ],
+        "headAlias" : "in0"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ufnrwmpK88FFZkfkaHTx7$$J9PZcCCcDKM0py88XNKhb",
+          "slug" : "in0"
+        }, {
+          "id" : "qSZjosIu6Eb1Z01nI8_Hs$$xe2uPILpjxwcSikI9zWg4",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "w5ol94fSUAHbS0nd5cKUh$$RMeHE57XeNeEaMUcC-BOI",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
     }
   },
   "connections" : [ ],
