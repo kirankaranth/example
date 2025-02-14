@@ -45,6 +45,37 @@
         "autoUpdateOnRun" : false
       },
       "index" : 0
+    },
+    "ecN8NfMMaoa7RqhkON83K$$aCEvf04EiL0lsX9HdY_u2" : {
+      "id" : "ecN8NfMMaoa7RqhkON83K$$aCEvf04EiL0lsX9HdY_u2",
+      "component" : "Deduplicate",
+      "metadata" : {
+        "label" : "Deduplicate_1",
+        "slug" : "Deduplicate_1",
+        "x" : -300,
+        "y" : 80,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "dedupColumns" : [ ],
+        "dedupType" : "distinct",
+        "columnsSelector" : [ ],
+        "orders" : [ ],
+        "useOrderBy" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "S778t5jGvYiDrknRiZsL4$$jFOBHbRM1ud73EGxcKPNu",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "hngdyBlQSjVN_uwc0wWRS$$ji36us0zd12IUnlJRuIH_",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
     }
   },
   "connections" : [ ],
