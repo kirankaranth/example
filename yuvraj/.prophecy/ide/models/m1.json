@@ -2,8 +2,8 @@
   "id" : "m1",
   "metainfo" : {
     "label" : "m1",
-    "autoLayout" : false,
-    "staleState" : "file",
+    "autoLayout" : true,
+    "staleState" : "none",
     "sourceSuggestions" : {
       "sources" : [ ]
     },
@@ -15,13 +15,11 @@
     "version" : 3
   },
   "processes" : {
-    "final##juyG6Vit" : {
-      "id" : "final##juyG6Vit",
+    "final##ll4sT2De" : {
+      "id" : "final##ll4sT2De",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
-        "x" : 20,
-        "y" : 20,
         "phase" : 0,
         "isLabelGrayed" : false
       },
@@ -29,7 +27,8 @@
         "customQueryDisabled" : true,
         "customQuery" : true,
         "incrementalEditorDisabled" : true,
-        "query" : "SELECT users\n\nFROM model1111111\n",
+        "query" : "SELECT users\n\nFROM model\n",
+        "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -38,7 +37,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "rx4x7Yye",
+          "id" : "Ts8AmCnT",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
