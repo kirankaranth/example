@@ -15,8 +15,8 @@
     "version" : 3
   },
   "processes" : {
-    "final##EApVJzLD" : {
-      "id" : "final##EApVJzLD",
+    "final##ROU4XflV" : {
+      "id" : "final##ROU4XflV",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
@@ -29,7 +29,7 @@
         "customQueryDisabled" : true,
         "customQuery" : true,
         "incrementalEditorDisabled" : true,
-        "query" : "remote\nprophecy\n",
+        "query" : "remote\ngithub\n",
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -38,47 +38,13 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "SVvSMCQQ",
+          "id" : "FauldqXt",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
       },
       "index" : 0
-    },
-    "XEKX_yJmbDWDEWEzHZSQc$$fAMEztRdOZALD6pkJoQRe" : {
-      "id" : "XEKX_yJmbDWDEWEzHZSQc$$fAMEztRdOZALD6pkJoQRe",
-      "component" : "Aggregate",
-      "metadata" : {
-        "label" : "Aggregate_1",
-        "slug" : "Aggregate_1",
-        "x" : -240,
-        "y" : 20,
-        "phase" : 0,
-        "macroDependencies" : [ ]
-      },
-      "properties" : {
-        "aggregate" : [ ],
-        "allowSelection" : true,
-        "condition" : {
-          "expression" : ""
-        },
-        "activeTab" : "aggregate",
-        "columnsSelector" : [ ],
-        "groupBy" : [ ]
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "FjMTLqDTz7rpHi7cXGwCK$$LC-4riSc1NTKLoQX6FACi",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "NwORFRAIzDS4_xA_QKUd1$$R4SjIq6HMuOVT4UydZW1t",
-          "slug" : "out"
-        } ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      }
     }
   },
   "connections" : [ ],
