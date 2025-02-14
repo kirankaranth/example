@@ -1,1 +1,1 @@
-select users from gh
+select users from github
