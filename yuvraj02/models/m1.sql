@@ -1,1 +1,1 @@
-select user from prophecy1132
+select user from prophecy
