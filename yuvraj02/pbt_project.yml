@@ -1,6 +1,6 @@
 name: SimpleExternal02
 description: ''
-version: '5'
+version: '6'
 author: kiranadmin@prophecy.io
 language: sql
 buildSystem: ''
