@@ -15,8 +15,8 @@
     "version" : 3
   },
   "processes" : {
-    "final##lUA2kCLF" : {
-      "id" : "final##lUA2kCLF",
+    "final##yMoOBvPy" : {
+      "id" : "final##yMoOBvPy",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
@@ -27,7 +27,8 @@
         "customQueryDisabled" : true,
         "customQuery" : true,
         "incrementalEditorDisabled" : true,
-        "query" : "SELECT users\n\nFROM model\n",
+        "query" : "SELECT users\n\nFROM model1111111\n",
+        "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -36,7 +37,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "QxXBLize",
+          "id" : "WwddRWOd",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
