@@ -69,6 +69,8 @@ sqlMacros:
 sqlSeeds: {}
 sqlSources: {}
 sqlUnreferencedSources: {}
+sqlOrchestratorPipelines: {}
+sqlBusinessApps: {}
 sqlPipeline:
   name: sqlPipeline
   description: null
