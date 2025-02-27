@@ -15,8 +15,8 @@
     "version" : 3
   },
   "processes" : {
-    "final##ONDVPU8t" : {
-      "id" : "final##ONDVPU8t",
+    "final##jOxQS2lH" : {
+      "id" : "final##jOxQS2lH",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
@@ -29,7 +29,7 @@
         "customQueryDisabled" : true,
         "customQuery" : true,
         "incrementalEditorDisabled" : true,
-        "query" : "prophecy\n",
+        "query" : "prophecyuser1\n",
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -38,7 +38,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "N7uK13Vt",
+          "id" : "CRpBZQYA",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
