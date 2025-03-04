@@ -1,1 +1,1 @@
-select github
+select prophecy
