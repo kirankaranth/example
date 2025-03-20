@@ -2,8 +2,8 @@
   "id" : "m1",
   "metainfo" : {
     "label" : "m1",
-    "autoLayout" : true,
-    "staleState" : "none",
+    "autoLayout" : false,
+    "staleState" : "file",
     "sourceSuggestions" : {
       "sources" : [ ]
     },
@@ -20,11 +20,14 @@
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
+        "x" : 20,
+        "y" : -40,
         "phase" : 0,
+        "macroDependencies" : [ ],
         "isLabelGrayed" : false
       },
       "properties" : {
-        "customQueryDisabled" : true,
+        "customQueryDisabled" : false,
         "customQuery" : true,
         "incrementalEditorDisabled" : true,
         "query" : "prophecyuser2\n",
@@ -41,8 +44,41 @@
         } ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
+      }
+    },
+    "2Qlp_HPm22WSjj2a16XlS$$TlF1PgUOFe6NNM8G840RA" : {
+      "id" : "2Qlp_HPm22WSjj2a16XlS$$TlF1PgUOFe6NNM8G840RA",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_1",
+        "slug" : "Aggregate_1",
+        "x" : -280,
+        "y" : -60,
+        "phase" : 0,
+        "macroDependencies" : [ ]
       },
-      "index" : 0
+      "properties" : {
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "NZc88dwZpbAA-H1reBb6A$$nB_pgKnkrFMVICE8VoNkB",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "t20JmXz4_Rj2Rq6Qicj0G$$FWV1VerJHP_YlofuVwhAz",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
     }
   },
   "connections" : [ ],
