@@ -46,7 +46,7 @@ sqlOrchestratorPipelines:
     description: null
     author: kiranadmin@prophecy.io
     files:
-    - pipelines/p1.json
+    - pipelines/p1.py
     createdAt: '2025-03-19 10:07:26'
 sqlBusinessApps: {}
 sqlPipeline:
@@ -55,7 +55,23 @@ sqlPipeline:
   author: kiranadmin@prophecy.io
   createdAt: '2025-03-19 10:07:15'
 dependencies: []
-projectDependencies: {}
+projectDependencies:
+  '22363':
+    projectUID: 22363
+    projectName: ProphecyDatabricksSqlBasics
+    repositoryPath: gitUri=https://github.com/prophecy-io/databricks-sql-basics&subPath=
+    version: 0.0.1
+    isDefault: true
+    author: null
+    createdAt: '2025-03-26 19:03:54'
+  '22364':
+    projectUID: 22364
+    projectName: ProphecySnowflakeSqlBasics
+    repositoryPath: gitUri=https://github.com/prophecy-io/snowflake-sql-basics&subPath=
+    version: 0.0.1
+    isDefault: true
+    author: null
+    createdAt: '2025-03-26 19:03:54'
 flags:
   shouldAddDefaultDependenciesIfAbsent: true
 pipelineConfigurations: {}
