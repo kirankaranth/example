@@ -3,25 +3,31 @@
   "metainfo" : {
     "label" : "m1",
     "autoLayout" : true,
-    "staleState" : "file",
+    "staleState" : "none",
     "sourceSuggestions" : {
       "sources" : [ ]
+    },
+    "graphConfig" : {
+      "userDefinedConfig" : {
+        "vars" : { }
+      }
     },
     "version" : 3
   },
   "processes" : {
-    "m1##Mz0yQ7sp" : {
-      "id" : "m1##Mz0yQ7sp",
+    "final##BbEMyKEg" : {
+      "id" : "final##BbEMyKEg",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
-        "phase" : 0
+        "phase" : 0,
+        "isLabelGrayed" : false
       },
       "properties" : {
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "",
+        "query" : "SELECT * \n\nFROM prophecy\n",
         "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
@@ -29,17 +35,15 @@
         }
       },
       "ports" : {
-        "inputs" : [ {
-          "id" : "JZ3t2Vmp",
-          "slug" : "in0"
-        } ],
+        "inputs" : [ ],
         "outputs" : [ {
-          "id" : "hPnJpU5Z",
+          "id" : "QwR3qlx3",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
-      }
+      },
+      "index" : 0
     }
   },
   "connections" : [ ],
