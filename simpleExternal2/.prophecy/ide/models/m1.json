@@ -15,8 +15,8 @@
     "version" : 3
   },
   "processes" : {
-    "final##BbEMyKEg" : {
-      "id" : "final##BbEMyKEg",
+    "final##JQLCwgKk" : {
+      "id" : "final##JQLCwgKk",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
@@ -27,7 +27,8 @@
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "SELECT * \n\nFROM prophecy\n",
+        "query" : "SELECT * \n\nFROM prophecy456\n",
+        "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -36,7 +37,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "QwR3qlx3",
+          "id" : "rQo49Bjw",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
