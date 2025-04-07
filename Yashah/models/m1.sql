@@ -1,1 +1,1 @@
-select from github
+select from propec
