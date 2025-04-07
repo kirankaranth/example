@@ -1,1 +1,3 @@
-select from github
+SELECT *
+
+FROM prophec
