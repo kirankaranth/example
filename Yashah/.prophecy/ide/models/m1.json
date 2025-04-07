@@ -17,13 +17,14 @@
         "label" : "m1",
         "x" : 20,
         "y" : 20,
-        "phase" : 0
+        "phase" : 0,
+        "macroDependencies" : [ ]
       },
       "properties" : {
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "",
+        "query" : "SELECT * \n\nFROM Aggregate_1\n",
         "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
@@ -33,7 +34,7 @@
       "ports" : {
         "inputs" : [ {
           "id" : "euTV2NPO",
-          "slug" : "in0"
+          "slug" : "Aggregate_1"
         } ],
         "outputs" : [ {
           "id" : "F1EvKhTz",
@@ -49,8 +50,8 @@
       "metadata" : {
         "label" : "Aggregate_1",
         "slug" : "Aggregate_1",
-        "x" : -600,
-        "y" : -220,
+        "x" : -160,
+        "y" : 20,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -78,6 +79,12 @@
       }
     }
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "XTihxPKlCSrKjGYH-ckoe$$udd_nePkq8BNxodQa9As-",
+    "source" : "s0WGSm1T1WbA-kcEUqjbH$$N4EZeTRgFqJVYr8zg4bN_",
+    "sourcePort" : "8iXU2i2h0lheznUpPc3Gm$$L9xD1-8M4y4wgL71o7SxH",
+    "target" : "m1##RZSsNKBG",
+    "targetPort" : "euTV2NPO"
+  } ],
   "component" : "Model"
 }
