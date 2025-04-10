@@ -1,5 +1,3 @@
 SELECT *
 
-FROM prophec
-
-sdwdwa
+FROM prophec AS sdwdwa
