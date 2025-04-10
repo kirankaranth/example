@@ -1,3 +1,5 @@
 SELECT *
 
-FROM prophec
+FROM prophechchuehdu
+
+aed
