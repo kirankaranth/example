@@ -1,1 +1,3 @@
-select from prophecy456
+SELECT *
+
+FROM prophecy456
