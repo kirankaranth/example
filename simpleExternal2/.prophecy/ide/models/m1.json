@@ -3,7 +3,7 @@
   "metainfo" : {
     "label" : "m1",
     "autoLayout" : false,
-    "staleState" : "none",
+    "staleState" : "file",
     "sourceSuggestions" : {
       "sources" : [ ]
     },
@@ -46,6 +46,40 @@
         "autoUpdateOnRun" : false
       },
       "index" : 0
+    },
+    "sFRvVj5psDxLIXB6F9jCQ$$xzOLYPrsupj6NS5cgTzfB" : {
+      "id" : "sFRvVj5psDxLIXB6F9jCQ$$xzOLYPrsupj6NS5cgTzfB",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_1",
+        "slug" : "Aggregate_1",
+        "x" : -160,
+        "y" : 80,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "kkP2qigwmSt6yMF_X3MEB$$dagPc6EU88FSdP7ES_E_o",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "CfYEYa2tvsLs1WIMJUd4f$$SaU8Ji-W3tUZR4HBZO8X1",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
     }
   },
   "connections" : [ ],
