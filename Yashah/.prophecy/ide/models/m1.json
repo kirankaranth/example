@@ -46,6 +46,52 @@
         "autoUpdateOnRun" : false
       },
       "index" : 0
+    },
+    "qJD3ZV2iuXCuqxRizVTW2$$-j2QxLZU9cGXfzzphgHz2" : {
+      "id" : "qJD3ZV2iuXCuqxRizVTW2$$-j2QxLZU9cGXfzzphgHz2",
+      "component" : "BulkColumnExpressions",
+      "metadata" : {
+        "label" : "BulkColumnExpressions_1",
+        "slug" : "BulkColumnExpressions_1",
+        "x" : -180,
+        "y" : 40,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "copyOriginalColumns" : false,
+        "changeOutputFieldType" : false,
+        "relation" : "in0",
+        "remainingColumns" : [ ],
+        "changeOutputFieldName" : false,
+        "schemaColDropdownSchema" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "columnNames" : [ ],
+        "isPrefix" : false,
+        "castOutputTypeName" : "Select output type",
+        "expressionToBeApplied" : "",
+        "dataType" : "",
+        "prefixSuffixToBeAdded" : "",
+        "prefixSuffixOption" : "Prefix / Suffix to be added"
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "buOGFYNGcgr8pvc1au8OU$$USyNFh27hldD_cOfQ6TBU",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "componentInfo" : {
+        "gemId" : "BulkColumnExpressions_DatabricksSqlBasics",
+        "name" : "BulkColumnExpressions",
+        "projectName" : "DatabricksSqlBasics",
+        "sourceProjectName" : "DatabricksSqlBasics",
+        "sourceProjectVersion" : "0.0.3.dev0"
+      }
     }
   },
   "connections" : [ ],
