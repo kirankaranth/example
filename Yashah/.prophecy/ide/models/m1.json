@@ -30,7 +30,6 @@
         "customQuery" : true,
         "incrementalEditorDisabled" : true,
         "query" : "SELECT *\n\nFROM prophec AS messi\n",
-        "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
