@@ -1,3 +1,3 @@
 SELECT *
 
-FROM prophec AS sdwdwa
+FROM prophec AS messi
