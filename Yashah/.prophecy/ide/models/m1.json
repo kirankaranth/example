@@ -3,7 +3,7 @@
   "metainfo" : {
     "label" : "m1",
     "autoLayout" : false,
-    "staleState" : "none",
+    "staleState" : "file",
     "sourceSuggestions" : {
       "sources" : [ ]
     },
