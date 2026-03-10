@@ -1,0 +1,57 @@
+---
+version: 2
+sources:
+- name: "qa_team.qa_database"
+  database: "qa_team"
+  schema: "qa_database"
+  tables:
+  - name: "demographics"
+    columns:
+    - name: "demographic_id"
+      dataType:
+        type: "String"
+    - name: "age_group"
+      dataType:
+        type: "String"
+    - name: "gender"
+      dataType:
+        type: "String"
+    - name: "income_level"
+      dataType:
+        type: "String"
+    - name: "education"
+      dataType:
+        type: "String"
+    - name: "location_type"
+      dataType:
+        type: "String"
+    - name: "household_size"
+      dataType:
+        type: "Integer"
+  - name: "filtered_employees_by_age"
+    config:
+      tags:
+      - "pipeline:filter_employees_by_age"
+    columns:
+    - name: "demographic_id"
+      dataType:
+        type: "String"
+    - name: "age_group"
+      dataType:
+        type: "String"
+    - name: "gender"
+      dataType:
+        type: "String"
+    - name: "income_level"
+      dataType:
+        type: "String"
+    - name: "education"
+      dataType:
+        type: "String"
+    - name: "location_type"
+      dataType:
+        type: "String"
+    - name: "household_size"
+      dataType:
+        type: "Integer"
+    type: "table"

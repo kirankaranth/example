@@ -1,0 +1,120 @@
+{
+  "id" : "filter_employees_by_age__filter",
+  "metainfo" : {
+    "label" : "filter_employees_by_age__filter",
+    "autoLayout" : true,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "alias" : "\"filtered_employees_by_age\"",
+        "materialized" : "table",
+        "database" : "\"qa_team\"",
+        "schema" : "\"qa_database\"",
+        "type" : "ModelConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "final##fINQvCz5" : {
+      "id" : "final##fINQvCz5",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "filter",
+        "phase" : 0
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "\nSELECT *\n\nFROM filtered_by_age\n\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "qoEsbPnd",
+          "slug" : "filtered_by_age"
+        } ],
+        "outputs" : [ {
+          "id" : "wDfCfjLn",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "filtered_by_age##MaW3xq4R" : {
+      "id" : "filtered_by_age##MaW3xq4R",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "filtered_by_age",
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "age_group = {{ var('age_group') }}"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "IskJd0DM",
+          "slug" : "demographics_source"
+        } ],
+        "outputs" : [ {
+          "id" : "knAEVm8T",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "demographics_sou##gI1lXqbL" : {
+      "id" : "demographics_sou##gI1lXqbL",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "demographics_source",
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "demographics",
+          "sourceType" : "Source",
+          "sourceName" : "qa_team.qa_database"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "G84CmM2Z",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "NMuj71uG",
+    "source" : "filtered_by_age##MaW3xq4R",
+    "sourcePort" : "knAEVm8T",
+    "target" : "final##fINQvCz5",
+    "targetPort" : "qoEsbPnd",
+    "isWireless" : false
+  }, {
+    "id" : "RSgff1dJ",
+    "source" : "demographics_sou##gI1lXqbL",
+    "sourcePort" : "G84CmM2Z",
+    "target" : "filtered_by_age##MaW3xq4R",
+    "targetPort" : "IskJd0DM",
+    "isWireless" : false
+  } ],
+  "component" : "Model"
+}
