@@ -1,0 +1,121 @@
+{
+  "id" : "filter_employees_by_age",
+  "metainfo" : {
+    "label" : "filter_employees_by_age",
+    "autoLayout" : true,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ {
+          "name" : "age_group",
+          "kind" : {
+            "type" : "string",
+            "value" : "'18-24'"
+          }
+        } ]
+      }
+    },
+    "isTranspiledPipeline" : false,
+    "processesVsModelFiles" : {
+      "filtered_by_age##MaW3xq4R" : "models/filter_employees_by_age/filter_employees_by_age__filter.sql",
+      "demographics_sou##gI1lXqbL" : "models/filter_employees_by_age/filter_employees_by_age__filter.sql",
+      "final##fINQvCz5" : "models/filter_employees_by_age/filter_employees_by_age__filter.sql"
+    }
+  },
+  "processes" : {
+    "demographics_sou##gI1lXqbL" : {
+      "id" : "demographics_sou##gI1lXqbL",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "demographics_source",
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "demographics",
+          "sourceType" : "Source",
+          "sourceName" : "qa_team.qa_database"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "G84CmM2Z",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      },
+      "index" : 0
+    },
+    "filtered_by_age##MaW3xq4R" : {
+      "id" : "filtered_by_age##MaW3xq4R",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "filtered_by_age",
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "age_group = {{ var('age_group') }}"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "IskJd0DM",
+          "slug" : "demographics_source"
+        } ],
+        "outputs" : [ {
+          "id" : "knAEVm8T",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "final##fINQvCz5" : {
+      "id" : "final##fINQvCz5",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "filter",
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "filtered_employees_by_age",
+          "sourceType" : "Source",
+          "sourceName" : "qa_team.qa_database",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "qoEsbPnd",
+          "slug" : "filtered_by_age"
+        } ],
+        "outputs" : [ {
+          "id" : "wDfCfjLn",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      },
+      "index" : 2
+    }
+  },
+  "connections" : [ {
+    "id" : "RSgff1dJ",
+    "source" : "demographics_sou##gI1lXqbL",
+    "sourcePort" : "G84CmM2Z",
+    "target" : "filtered_by_age##MaW3xq4R",
+    "targetPort" : "IskJd0DM",
+    "isWireless" : false
+  }, {
+    "id" : "NMuj71uG",
+    "source" : "filtered_by_age##MaW3xq4R",
+    "sourcePort" : "knAEVm8T",
+    "target" : "final##fINQvCz5",
+    "targetPort" : "qoEsbPnd",
+    "isWireless" : false
+  } ],
+  "component" : "Pipeline"
+}

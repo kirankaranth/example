@@ -1,0 +1,53 @@
+{
+  "id" : "filter_employees_by_age",
+  "metainfo" : {
+    "label" : "filter_employees_by_age",
+    "autoLayout" : true,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ {
+          "name" : "age_group",
+          "kind" : {
+            "type" : "string",
+            "value" : "'18-24'"
+          }
+        } ]
+      }
+    },
+    "isTranspiledPipeline" : false
+  },
+  "processes" : {
+    "final##fINQvCz5" : {
+      "id" : "final##fINQvCz5",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "filter_employees_by_age__filter",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "filter_employees_by_age__filter"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "final##fINQvCz5", "filtered_by_age##MaW3xq4R", "demographics_sou##gI1lXqbL" ],
+        "type" : "table",
+        "isTemporaryTable" : false,
+        "lastNodeProcessIds" : [ "final##fINQvCz5" ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "filter_employees_by_age__filter_in_0",
+          "slug" : "in_0"
+        } ],
+        "outputs" : [ {
+          "id" : "filter_employees_by_age__filter_out_0",
+          "slug" : "out_0"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}
