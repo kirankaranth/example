@@ -115,8 +115,8 @@
       "component" : "SQLStatement",
       "metadata" : {
         "label" : "employees_data",
-        "x" : 0,
-        "y" : 80,
+        "x" : 20,
+        "y" : 0,
         "phase" : 0
       },
       "properties" : {
