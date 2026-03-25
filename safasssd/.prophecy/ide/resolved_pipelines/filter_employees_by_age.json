@@ -2,7 +2,7 @@
   "id" : "filter_employees_by_age",
   "metainfo" : {
     "label" : "filter_employees_by_age",
-    "autoLayout" : true,
+    "autoLayout" : false,
     "version" : 1,
     "configuration" : {
       "schema" : {
@@ -17,6 +17,12 @@
       }
     },
     "isTranspiledPipeline" : false,
+    "processesVsModelFiles" : {
+      "final##f6jrBwZV" : "models/filter_employees_by_age/filter_employees_by_age__filter_by_age.sql",
+      "employees_data##XyXLocTQ" : "models/filter_employees_by_age/filter_employees_by_age__filter_by_age.sql",
+      "filter_by_age##OdJnS2LL" : "models/filter_employees_by_age/filter_employees_by_age__filter_by_age.sql",
+      "sorted_employees##OBU34H2m" : "models/filter_employees_by_age/filter_employees_by_age__filter_by_age.sql"
+    },
     "isHarmonizedPipeline" : false
   },
   "processes" : {

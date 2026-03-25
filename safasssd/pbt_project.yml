@@ -95,26 +95,36 @@ sqlSources:
         fields:
         - name: employee_id
           dataType:
-            type: Bigint
+            type: Integer
+          description: Unique identifier for the employee
         - name: first_name
           dataType:
             type: String
+          description: Employee's given name
         - name: last_name
           dataType:
             type: String
+          description: Employee's family name
         - name: department
           dataType:
             type: String
+          description: Department the employee belongs to within the organization
         - name: age
           dataType:
-            type: Bigint
+            type: Integer
+          description: Current age of the employee in years
         - name: salary
           dataType:
-            type: Bigint
+            type: Integer
+          description: Compensation amount for the employee; Indicates annual or base
+            pay associated with the role.
         - name: hire_date
           dataType:
             type: Date
-      description: null
+          description: Date when the employee joined the organization; Reflects the
+            start of tenure.
+      description: Employee roster snapshot by age, enabling workforce planning and
+        departmental insights.
       author: sony@prophecy.io
       createdAt: '2026-03-25 05:42:35'
       tableType: table

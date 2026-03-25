@@ -2,7 +2,7 @@
   "id" : "filter_employees_by_age",
   "metainfo" : {
     "label" : "filter_employees_by_age",
-    "autoLayout" : true,
+    "autoLayout" : false,
     "version" : 1,
     "configuration" : {
       "schema" : {
@@ -31,6 +31,8 @@
       "component" : "Filter",
       "metadata" : {
         "label" : "filter_by_age",
+        "x" : 220,
+        "y" : 20,
         "phase" : 0
       },
       "properties" : {
@@ -56,6 +58,8 @@
       "component" : "SQLStatement",
       "metadata" : {
         "label" : "employees_data",
+        "x" : 20,
+        "y" : 20,
         "phase" : 0
       },
       "properties" : {
@@ -80,6 +84,8 @@
       "component" : "OrderBy",
       "metadata" : {
         "label" : "sorted_employees",
+        "x" : 420,
+        "y" : 20,
         "phase" : 0
       },
       "properties" : {
@@ -108,7 +114,11 @@
       "component" : "Dataset",
       "metadata" : {
         "label" : "filter_by_age",
-        "phase" : 0
+        "x" : 620,
+        "y" : 20,
+        "phase" : 0,
+        "comment" : "Provides a filtered employee dataset for age-based insights and downstream analysis.",
+        "autoUpdateComment" : true
       },
       "properties" : {
         "table" : {

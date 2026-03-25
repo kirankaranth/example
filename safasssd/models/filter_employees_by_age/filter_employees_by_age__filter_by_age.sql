@@ -53,6 +53,7 @@ sorted_employees AS (
 
 )
 
+{#Provides a filtered employee dataset for age-based insights and downstream analysis.#}
 SELECT *
 
 FROM sorted_employees

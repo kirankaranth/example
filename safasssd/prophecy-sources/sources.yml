@@ -6,29 +6,40 @@ sources:
   schema: "orch_test"
   tables:
   - name: "filtered_employees_by_age"
+    description: "Employee roster snapshot by age, enabling workforce planning and\
+      \ departmental insights."
     config:
       tags:
       - "pipeline:filter_employees_by_age"
     columns:
     - name: "employee_id"
+      description: "Unique identifier for the employee"
       dataType:
-        type: "Bigint"
+        type: "Integer"
     - name: "first_name"
+      description: "Employee's given name"
       dataType:
         type: "String"
     - name: "last_name"
+      description: "Employee's family name"
       dataType:
         type: "String"
     - name: "department"
+      description: "Department the employee belongs to within the organization"
       dataType:
         type: "String"
     - name: "age"
+      description: "Current age of the employee in years"
       dataType:
-        type: "Bigint"
+        type: "Integer"
     - name: "salary"
+      description: "Compensation amount for the employee; Indicates annual or base\
+        \ pay associated with the role."
       dataType:
-        type: "Bigint"
+        type: "Integer"
     - name: "hire_date"
+      description: "Date when the employee joined the organization; Reflects the start\
+        \ of tenure."
       dataType:
         type: "Date"
     type: "table"

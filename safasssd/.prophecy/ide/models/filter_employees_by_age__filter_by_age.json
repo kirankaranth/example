@@ -24,7 +24,8 @@
       "component" : "TargetModel",
       "metadata" : {
         "label" : "filter_by_age",
-        "phase" : 0
+        "phase" : 0,
+        "comment" : "Provides a filtered employee dataset for age-based insights and downstream analysis."
       },
       "properties" : {
         "customQueryDisabled" : true,
@@ -55,6 +56,8 @@
       "component" : "OrderBy",
       "metadata" : {
         "label" : "sorted_employees",
+        "x" : 420,
+        "y" : 20,
         "phase" : 0
       },
       "properties" : {
@@ -84,6 +87,8 @@
       "component" : "Filter",
       "metadata" : {
         "label" : "filter_by_age",
+        "x" : 220,
+        "y" : 20,
         "phase" : 0
       },
       "properties" : {
@@ -110,6 +115,8 @@
       "component" : "SQLStatement",
       "metadata" : {
         "label" : "employees_data",
+        "x" : 20,
+        "y" : 20,
         "phase" : 0
       },
       "properties" : {
