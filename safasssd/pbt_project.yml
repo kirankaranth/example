@@ -157,5 +157,7 @@ sqlOrchestratorPipelines:
     files:
     - .prophecy/ide/pipelines/filter_employees_by_age.json
     - pipelines/filter_employees_by_age.py
+    - models/filter_employees_by_age/filter_employees_by_age__filter_by_age.sql
+    - models/filter_employees_by_age/schema.yml
     createdAt: '2026-03-25 05:42:35'
 sqlBusinessApps: {}
