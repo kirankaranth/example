@@ -1,6 +1,0 @@
----
-version: 2
-models:
-- name: "filter_employees_by_age__filter_by_age"
-  tags:
-  - "prophecy_temp"

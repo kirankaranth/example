@@ -155,8 +155,6 @@ sqlOrchestratorPipelines:
     description: null
     author: sony@prophecy.io
     files:
-    - models/filter_employees_by_age/schema.yml
-    - models/filter_employees_by_age/filter_employees_by_age__filter_by_age.sql
     - .prophecy/ide/pipelines/filter_employees_by_age.json
     - pipelines/filter_employees_by_age.py
     createdAt: '2026-03-25 05:42:35'
