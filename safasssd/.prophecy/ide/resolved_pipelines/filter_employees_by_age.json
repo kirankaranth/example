@@ -1,0 +1,51 @@
+{
+  "id" : "filter_employees_by_age",
+  "metainfo" : {
+    "label" : "filter_employees_by_age",
+    "autoLayout" : true,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ {
+          "name" : "min_age_threshold",
+          "kind" : {
+            "type" : "int",
+            "value" : "30"
+          }
+        } ]
+      }
+    },
+    "isTranspiledPipeline" : false,
+    "isHarmonizedPipeline" : false
+  },
+  "processes" : {
+    "final##f6jrBwZV" : {
+      "id" : "final##f6jrBwZV",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "filter_employees_by_age__filter_by_age",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "filter_employees_by_age__filter_by_age"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "final##f6jrBwZV", "sorted_employees##OBU34H2m", "filter_by_age##OdJnS2LL", "employees_data##XyXLocTQ" ],
+        "type" : "table",
+        "isTemporaryTable" : false,
+        "lastNodeProcessIds" : [ "final##f6jrBwZV" ]
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "z7mqH63o",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

@@ -1,0 +1,26 @@
+---
+version: 2
+seeds:
+- name: "employees_with_age"
+  columns:
+  - name: "employee_id"
+    dataType:
+      type: "Bigint"
+  - name: "first_name"
+    dataType:
+      type: "String"
+  - name: "last_name"
+    dataType:
+      type: "String"
+  - name: "department"
+    dataType:
+      type: "String"
+  - name: "age"
+    dataType:
+      type: "Bigint"
+  - name: "salary"
+    dataType:
+      type: "Bigint"
+  - name: "hire_date"
+    dataType:
+      type: "Date"

@@ -1,0 +1,34 @@
+---
+version: 2
+sources:
+- name: "sony_orch_test"
+  database: "sony"
+  schema: "orch_test"
+  tables:
+  - name: "filtered_employees_by_age"
+    config:
+      tags:
+      - "pipeline:filter_employees_by_age"
+    columns:
+    - name: "employee_id"
+      dataType:
+        type: "Bigint"
+    - name: "first_name"
+      dataType:
+        type: "String"
+    - name: "last_name"
+      dataType:
+        type: "String"
+    - name: "department"
+      dataType:
+        type: "String"
+    - name: "age"
+      dataType:
+        type: "Bigint"
+    - name: "salary"
+      dataType:
+        type: "Bigint"
+    - name: "hire_date"
+      dataType:
+        type: "Date"
+    type: "table"

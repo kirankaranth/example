@@ -1,0 +1,157 @@
+{
+  "id" : "filter_employees_by_age__filter_by_age",
+  "metainfo" : {
+    "label" : "filter_employees_by_age__filter_by_age",
+    "autoLayout" : true,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "alias" : "\"filtered_employees_by_age\"",
+        "materialized" : "table",
+        "database" : "\"sony\"",
+        "schema" : "\"orch_test\"",
+        "type" : "ModelConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "final##f6jrBwZV" : {
+      "id" : "final##f6jrBwZV",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "filter_by_age",
+        "phase" : 0
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "\nSELECT *\n\nFROM sorted_employees\n\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "f7wNF8qQ",
+          "slug" : "sorted_employees"
+        } ],
+        "outputs" : [ {
+          "id" : "qoOTTGoW",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "sorted_employees##OBU34H2m" : {
+      "id" : "sorted_employees##OBU34H2m",
+      "component" : "OrderBy",
+      "metadata" : {
+        "label" : "sorted_employees",
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "orders" : [ {
+          "expression" : {
+            "expression" : "age"
+          },
+          "sortType" : "desc"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "XAXD9qNs",
+          "slug" : "filter_by_age"
+        } ],
+        "outputs" : [ {
+          "id" : "z7mqH63o",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "filter_by_age##OdJnS2LL" : {
+      "id" : "filter_by_age##OdJnS2LL",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "filter_by_age",
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "age >= {{ var('min_age_threshold') }}"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "HdI4qowr",
+          "slug" : "employees_data"
+        } ],
+        "outputs" : [ {
+          "id" : "rIOhOeX0",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "employees_data##XyXLocTQ" : {
+      "id" : "employees_data##XyXLocTQ",
+      "component" : "SQLStatement",
+      "metadata" : {
+        "label" : "employees_data",
+        "phase" : 0
+      },
+      "properties" : {
+        "fileTabs" : [ {
+          "path" : "out",
+          "id" : "out",
+          "language" : "sql",
+          "content" : "SELECT\n    employee_id,\n    first_name,\n    last_name,\n    department,\n    age,\n    salary,\n    hire_date\n  FROM (\n    VALUES\n      (1, 'John', 'Smith', 'Engineering', 28, 85000, DATE '2020-01-15'),\n      (2, 'Jane', 'Doe', 'Engineering', 35, 92000, DATE '2019-06-20'),\n      (3, 'Bob', 'Johnson', 'Sales', 42, 75000, DATE '2021-03-10'),\n      (4, 'Alice', 'Williams', 'Marketing', 29, 68000, DATE '2020-11-05'),\n      (5, 'Charlie', 'Brown', 'Engineering', 55, 105000, DATE '2018-02-28'),\n      (6, 'Diana', 'Davis', 'Sales', 31, 72000, DATE '2022-01-12'),\n      (7, 'Edward', 'Miller', 'Marketing', 48, 78000, DATE '2019-09-15'),\n      (8, 'Fiona', 'Wilson', 'Engineering', 26, 70000, DATE '2023-04-01'),\n      (9, 'George', 'Taylor', 'Sales', 39, 82000, DATE '2020-07-22'),\n      (10, 'Helen', 'Anderson', 'Marketing', 52, 88000, DATE '2017-11-30')\n  ) AS t(employee_id, first_name, last_name, department, age, salary, hire_date)\n"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "DoZC4eB9",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "y6HjnUuW",
+    "source" : "sorted_employees##OBU34H2m",
+    "sourcePort" : "z7mqH63o",
+    "target" : "final##f6jrBwZV",
+    "targetPort" : "f7wNF8qQ",
+    "isWireless" : false
+  }, {
+    "id" : "OP9D8V5p",
+    "source" : "filter_by_age##OdJnS2LL",
+    "sourcePort" : "rIOhOeX0",
+    "target" : "sorted_employees##OBU34H2m",
+    "targetPort" : "XAXD9qNs",
+    "isWireless" : false
+  }, {
+    "id" : "GurSfRAl",
+    "source" : "employees_data##XyXLocTQ",
+    "sourcePort" : "DoZC4eB9",
+    "target" : "filter_by_age##OdJnS2LL",
+    "targetPort" : "HdI4qowr",
+    "isWireless" : false
+  } ],
+  "component" : "Model"
+}
