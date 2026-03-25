@@ -58,8 +58,8 @@
       "component" : "SQLStatement",
       "metadata" : {
         "label" : "employees_data",
-        "x" : 20,
-        "y" : 20,
+        "x" : 60,
+        "y" : -80,
         "phase" : 0
       },
       "properties" : {
